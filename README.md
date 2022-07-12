@@ -11,7 +11,7 @@ experience. The quality of this can be one of the main key points for our app su
 
 Well, the goal of this Challenge is to replicate the Twitter interface!
 
-![Brais Moure Challenge card](moure_twitter-mirroring.png)
+![Brais Moure Challenge card](twitter-mirroring-banner.png)
 
 > This is a challenge created by [MoureDev](https://www.twitch.tv/mouredev). He will review and give feedback to some
 > proposed solutions from the community in one of his Twitch livestreams 😻
