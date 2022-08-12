@@ -1,5 +1,5 @@
-// Icon
 import Avatar from '@mui/material/Avatar'
+import PropTypes from 'prop-types'
 
 const TweetAvatar = ({ profilePicture }) => {
 	return (
@@ -11,6 +11,10 @@ const TweetAvatar = ({ profilePicture }) => {
 			/>
 		</div>
 	)
+}
+
+TweetAvatar.propTypes = {
+	profilePicture: PropTypes.string.isRequired,
 }
 
 export default TweetAvatar

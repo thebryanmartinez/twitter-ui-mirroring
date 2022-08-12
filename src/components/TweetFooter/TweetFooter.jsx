@@ -3,6 +3,7 @@ import ModeCommentOutlinedIcon from '@mui/icons-material/ModeCommentOutlined'
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined'
 import LoopOutlinedIcon from '@mui/icons-material/LoopOutlined'
 import FileUploadOutlinedIcon from '@mui/icons-material/FileUploadOutlined'
+import PropTypes from 'prop-types'
 
 // Component: TweetFooterButton
 import TweetFooterButton from './TweetFooterButton'
@@ -33,6 +34,12 @@ const TweetFooter = ({ comments, likes, retweets }) => {
 			</Tooltip>
 		</div>
 	)
+}
+
+TweetFooter.propTypes = {
+	comments: PropTypes.number.isRequired,
+	likes: PropTypes.number.isRequired,
+	retweets: PropTypes.number.isRequired,
 }
 
 export default TweetFooter

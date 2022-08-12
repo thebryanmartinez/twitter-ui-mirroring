@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+
 const ImageContainer = ({ image1, image2, image3, image4 }) => {
 	const images = { image1: '', image2: '', image3: '', image4: '' }
 
@@ -27,6 +29,13 @@ const ImageContainer = ({ image1, image2, image3, image4 }) => {
 			</div>
 		</div>
 	)
+}
+
+ImageContainer.propTypes = {
+	image1: PropTypes.string,
+	image2: PropTypes.string,
+	image3: PropTypes.string,
+	image4: PropTypes.string,
 }
 
 export default ImageContainer

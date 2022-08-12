@@ -2,6 +2,7 @@
 import TweetFooter from './TweetFooter/TweetFooter'
 import TweetHeader from './TweetHeader'
 import TweetAvatar from './TweetAvatar'
+import PropTypes from 'prop-types'
 
 const ImageTweet = ({
 	children,
@@ -25,6 +26,18 @@ const ImageTweet = ({
 			</div>
 		</div>
 	)
+}
+
+ImageTweet.propTypes = {
+	username: PropTypes.string.isRequired,
+	name: PropTypes.string.isRequired,
+	time: PropTypes.string.isRequired,
+	likes: PropTypes.number.isRequired,
+	comments: PropTypes.number.isRequired,
+	retweets: PropTypes.number.isRequired,
+	profilePicture: PropTypes.string.isRequired,
+	image: PropTypes.string.isRequired,
+	children: PropTypes.node.isRequired,
 }
 
 export default ImageTweet

@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react'
+import PropTypes from 'prop-types'
 
 let opacity = 'opacity-0'
+
 const Tooltip = ({ children, text, margin }) => {
 	const [isHovering, setIsHovering] = useState(false)
 
@@ -24,6 +26,12 @@ const Tooltip = ({ children, text, margin }) => {
 			</p> */}
 		</div>
 	)
+}
+
+Tooltip.propTypes = {
+	children: PropTypes.node.isRequired,
+	text: PropTypes.string.isRequired,
+	margin: PropTypes.any,
 }
 
 export default Tooltip

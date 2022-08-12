@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+
 const NavigationButton = ({ children }) => {
 	return (
 		<a href='#' className='w-full h-full flex items-center justify-center'>
@@ -6,6 +8,10 @@ const NavigationButton = ({ children }) => {
 			</div>
 		</a>
 	)
+}
+
+NavigationButton.propTypes = {
+	children: PropTypes.node.isRequired,
 }
 
 export default NavigationButton

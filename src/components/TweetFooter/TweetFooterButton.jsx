@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+
 const TweetFooterButton = ({ children, color, number }) => {
 	if (number >= 1000 && number < 10000) {
 		number = number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')
@@ -16,6 +18,12 @@ const TweetFooterButton = ({ children, color, number }) => {
 			<span>{number}</span>
 		</div>
 	)
+}
+
+TweetFooterButton.propTypes = {
+	children: PropTypes.node.isRequired,
+	color: PropTypes.string.isRequired,
+	number: PropTypes.number,
 }
 
 export default TweetFooterButton

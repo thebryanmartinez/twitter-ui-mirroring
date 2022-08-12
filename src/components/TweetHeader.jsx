@@ -1,6 +1,7 @@
 // Icons
 import CircleIcon from '@mui/icons-material/Circle'
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz'
+import PropTypes from 'prop-types'
 
 import Tooltip from './Tooltip'
 
@@ -24,6 +25,12 @@ const TweetHeader = ({ name, username, time }) => {
 			</Tooltip>
 		</div>
 	)
+}
+
+TweetHeader.propTypes = {
+	name: PropTypes.string.isRequired,
+	username: PropTypes.string.isRequired,
+	time: PropTypes.string.isRequired,
 }
 
 export default TweetHeader

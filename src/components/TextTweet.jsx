@@ -2,10 +2,10 @@
 import TweetFooter from './TweetFooter/TweetFooter'
 import TweetHeader from './TweetHeader'
 import TweetAvatar from './TweetAvatar'
+import PropTypes from 'prop-types'
 
 const TextTweet = ({
 	children,
-	image,
 	time,
 	retweets,
 	comments,
@@ -14,7 +14,6 @@ const TextTweet = ({
 	username,
 	profilePicture,
 }) => {
-
 	return (
 		<div className='noSelect tweetContainer'>
 			<TweetAvatar profilePicture={profilePicture} />
@@ -25,6 +24,17 @@ const TextTweet = ({
 			</div>
 		</div>
 	)
+}
+
+TextTweet.propTypes = {
+	username: PropTypes.string.isRequired,
+	name: PropTypes.string.isRequired,
+	time: PropTypes.string.isRequired,
+	likes: PropTypes.number.isRequired,
+	comments: PropTypes.number.isRequired,
+	retweets: PropTypes.number.isRequired,
+	profilePicture: PropTypes.string.isRequired,
+	children: PropTypes.node.isRequired,
 }
 
 export default TextTweet
